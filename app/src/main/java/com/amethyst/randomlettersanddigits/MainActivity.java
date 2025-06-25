@@ -275,15 +275,10 @@ public class MainActivity extends AppCompatActivity {
         mp = new LinkedList<>();
         r = new Random();
 
-        //TODO
-        //sortedDigits = sortDigits();
-        //sortedLetters =  sortLetters();
 
         chosenSounds = new LinkedList<>();
         solution = new LinkedList<>();
 
-        //TODO
-        //solution = sortedDigits() + sortedLetters();
 
         sortedChosenDigitsMyProblem = new LinkedList<>();
         sortedChosenLettersMyProblem = new LinkedList<>();
