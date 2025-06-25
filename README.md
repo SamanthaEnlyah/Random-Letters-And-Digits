@@ -37,6 +37,9 @@ You have to delete the answer and type your answer to the Manual mode IN THE SAM
 </br>
 Instructions for use case 1: Auto mode<br>
 Click on Auto Mode tab.
+You will see a blue rectangular background with some gui components. </br>
+Below "Length of problem" label, write a number that says how long do you want the problem to be. Default is 3. </br>
+Example: if you leave the number 3 in the field, you will get something like: "k2j". Or "zht". It will have total of 3 random numbers and characters.</br>
 Click on Generate button to make app generate random characters.<br>
 Click on Play button (the one to the right of Generate).<br>
 You will hear generated sounds.<br>
