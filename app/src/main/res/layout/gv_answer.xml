@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewID"
+                android:layout_width="23dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="26dp"
+                android:fontFamily="serif"
+                android:text="ID test placeholder"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/textViewID1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="14pt"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="ID"-->
+<!--                app:layout_constraintStart_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+            <TextView
+                android:id="@+id/textViewUserSoundPlaceholder"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="26dp"
+                android:fontFamily="serif"
+                android:text="Sound placeholder"
+                app:layout_constraintStart_toEndOf="@+id/textViewID"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewUserSolutionPlaceholder"
+                android:layout_width="70dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="26dp"
+                android:fontFamily="serif"
+                android:text="Your solution placeholder"
+                app:layout_constraintStart_toEndOf="@+id/textViewUserSoundPlaceholder"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewSolutionPlaceholder"
+                android:layout_width="70dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="26dp"
+                android:fontFamily="serif"
+                android:text="Solution placeholder"
+                app:layout_constraintStart_toStartOf="@+id/textViewUserSolutionPlaceholder"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewIsCorrectPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="26dp"
+                android:fontFamily="serif"
+                android:text="IsCorrect"
+                app:layout_constraintStart_toEndOf="@+id/textViewSolutionPlaceholder"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical"
+    android:paddingBottom="25dp"
+    tools:context=".AutoModeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_blue"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="242dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="serif"
+                android:onClick="ToggleProblems"
+                android:text="Generate random problem automatically:"
+                android:textColor="#F1EEEE"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewLengthLabel"
+                android:layout_width="215dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:text="Length of problem:"
+                android:textAlignment="viewStart"
+                android:textColor="#F1EEEE"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/editTextNumberSoundLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLengthLabel"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonGenerate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#1B62DD"
+                    android:onClick="GenerateProblem"
+                    android:text="Generate"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberSoundLength" />
+
+                <Button
+                    android:id="@+id/buttonPlay"
+                    android:layout_width="65dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#1B62DD"
+                    android:fontFamily="serif"
+                    android:onClick="Play"
+                    app:icon="@android:drawable/ic_media_play"
+                    app:layout_constraintStart_toEndOf="@+id/buttonGenerate"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonShowPlayed"
+                android:layout_width="205dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#1B62DD"
+                android:fontFamily="serif"
+                android:onClick="ShowText"
+                android:text="Show text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonPlay" />
+
+            <TextView
+                android:id="@+id/textViewPlayedSoundInText"
+                android:layout_width="205dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="serif"
+                android:text="Sound..."
+                android:textAlignment="center"
+                android:textColor="#F1EEEE"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonShowPlayed" />
+
+            <Button
+                android:id="@+id/buttonCheck"
+                android:layout_width="205dp"
+                android:layout_height="94dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#1B62DD"
+                android:fontFamily="serif"
+                android:onClick="CheckSolution"
+                android:text="Check your solution for generated  problem"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextYourSolution" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
