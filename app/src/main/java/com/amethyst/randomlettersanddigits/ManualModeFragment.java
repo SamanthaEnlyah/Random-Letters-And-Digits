@@ -39,9 +39,6 @@ public class ManualModeFragment extends Fragment {
         return view;
     }
 
-    public EditText getEditTextProblem() {
-        return editTextProblem;
-    }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
